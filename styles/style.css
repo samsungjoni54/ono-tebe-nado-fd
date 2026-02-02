@@ -34,7 +34,8 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  width: 236px;
+  max-width: 236px;
+  width: 100%;
   line-height: 1.3;
   font-style: normal;
 }
@@ -42,7 +43,7 @@
 .cover {
   width: 100%;
   min-height: 757px;
-  background-image: url("./../images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,21 +134,24 @@
 }
 .lots_list-item {
   background-size: cover;
-  height: 596px;
+  min-height: 596px;
   z-index: 0;
   background-position: center;
 }
 .lots_list-item:nth-child(1) {
-  background-image: url(./../images/card-lot-01.jpg);
+  background: url(../images/card-lot-01.jpg) center / cover;
 }
 .lots_list-item:nth-child(2) {
-  background-image: url(./../images/card-lot-02.jpg);
+  background: url(../images/card-lot-02.jpg) center / cover;
 }
 .lots_list-item:nth-child(3) {
-  background-image: url(./../images/card-lot-03.jpg);
+  background: url(../images/card-lot-03.jpg) center / cover;
 }
 .card-link {
   text-decoration: none;
+}
+.lots .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card {
@@ -231,12 +235,13 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 180px;
+  grid-template-rows: 180px;
   padding: 0 50px;
 }
 .footer .contacts {
   justify-self: start;
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
 }
 .footer .nav {
   justify-self: center;
