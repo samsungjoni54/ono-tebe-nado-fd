@@ -40,11 +40,13 @@
 }
 /* MAIN COVER  */
 .cover {
+  width: 100%;
   min-height: 757px;
   background-image: url("./../images/cover.jpg");
-  background-size: 1100px 757px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
