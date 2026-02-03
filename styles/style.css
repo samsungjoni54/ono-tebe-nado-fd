@@ -59,7 +59,7 @@
   width: 100%;
   height: 100%;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 .cover-title {
@@ -72,18 +72,14 @@
   text-transform: uppercase;
 }
 .cover-title span {
-  display: block;
   line-height: 1.32;
+  display: block;
 }
 .cover-title span:nth-child(2) {
-  display: block;
-  line-height: 1.32;
   margin-left: 30px;
 }
 .cover-title span:last-child {
-  display: block;
-  line-height: 1.32;
-  margin-left: 615px;
+  margin-right: -30px;
 }
 
 .cover_description {
@@ -149,9 +145,6 @@
 }
 .card-link {
   text-decoration: none;
-}
-.lots .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card {
